@@ -7,12 +7,12 @@
 }
 
 :root {
-    --cor-padrao: #00314f;
+    --cor-padrao: #00324f;
     --cor-padrao-hover: rgb(243, 243, 243);
     --cor-font: #fff;
     --cor-font-p: #555;
-    --cor-btn: #563434;
-    --cor-btn-hover: #15ff00;
+    --cor-btn: #00324f;
+    --cor-btn-hover: #000;
     --cor-btn-font: #000;
     --cor-font-corpo: #555;
     --cor-font-corpo-leve: #777;
@@ -35,38 +35,48 @@ body {
     padding-right: 25px;
 }
 
+/* Estilo para o cabeçalho fixo */
 .navbar {
-    display: flex;
-    align-items: center;
-    padding: 20px 0;
-    justify-content: space-between;
+    position: fixed; /* Fixa o elemento */
+    top: 0; /* Posiciona na parte superior */
+    left: 0; /* Posiciona na parte esquerda */
+    width: 100%; /* Ocupa 100% da largura da tela */
+    background-color: #00324f; /* Cor de fundo do menu */
+    z-index: 1000; /* Coloca o menu no topo da pilha de renderização */
+    display: flex; /* Alinha o conteúdo horizontalmente */
+    align-items: center; /* Alinha verticalmente ao centro */
+    padding: 10px 20px; /* Espaçamento interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para destaque */
 }
 
-nav {
-    flex: 1;
-    text-align: right;
+/* Ajustes para o menu */
+.navbar .logo img {
+    max-width: 125px; /* Tamanho do logotipo */
+    margin-right: 50px;
 }
 
-nav ul {
-    display: inline-block;
-    list-style-type: none;
+.navbar nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove espaçamentos */
+    display: flex; /* Exibe os itens em linha */
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Espaçamento entre itens */
 }
 
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--cor-font);
-    padding: 5px 10px;
-    border-radius: 5px;
+.navbar nav ul li a {
+    text-decoration: none; /* Remove sublinhado */
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+    padding: 10px 15px; /* Espaçamento dos itens */
+    transition: color 0.3s; /* Transição suave */
 }
 
 nav ul li a:hover {
-    background-color: var(--cor-btn-hover);
-    color: var(--cor-btn-font);
+    background-color: white;
+    color: #00324f;
+    transition: 0.9s;
+    border-radius: 5px;
 }
 
 .banner p {
@@ -119,8 +129,8 @@ p {
 }
 
 .btn:hover {
-    background: var(--cor-btn-hover);
-    color: var(--cor-btn-font);
+    background: rgb(0, 0, 172) ;
+    color: white;
 }
 
 .categorias {
@@ -381,4 +391,89 @@ h2 {
     color: #fff;
     margin: 0;
     padding: 20px;
+}
+
+section{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #contactForm button {
+    padding: 10px 20px;
+    background: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  footer p{
+    color: #fff;
+  }
+  
+  /* Estilo das redes sociais flutuantes */
+  /* Estilo das redes sociais flutuantes */
+  .social-links {
+    position: fixed;
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    z-index: 1000; /* Garante que fica sobre outros elementos */
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Espaçamento entre os ícones */
+  }
+  
+  .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Cor específica para cada rede social */
+  .social-links a.whatsapp { background-color: #25D366; }
+  .social-links a.email { background-color: #D44638; }
+  .social-links a.instagram { background-color: #E4405F; }
+  
+  /* Aumenta levemente o tamanho ao passar o mouse */
+  .social-links a:hover {
+    transform: scale(1.1); /* Efeito de aumento */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  }
+
+.btnsent{
+    align-items: center;
 }
