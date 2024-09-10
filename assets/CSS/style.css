@@ -402,7 +402,7 @@ section{
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #fff;
     border-radius: 4px;
   }
   
@@ -416,27 +416,79 @@ section{
   }
   
   footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  footer ul {
-    list-style: none;
+    background-color: #00324f;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+}
+
+.footer-container {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  footer ul li a {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-about, .footer-links, .footer-contact {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-about h3, .footer-links h3, .footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #f0a500;
+}
+
+.footer-about p, .footer-contact p {
+    line-height: 1.6;
+    color: #fff;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
     color: white;
     text-decoration: none;
-  }
+    transition: color 0.3s;
+}
 
-  footer p{
+.footer-links ul li a:hover {
+    color: #00324f;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #00324f;
     color: #fff;
-  }
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about, .footer-links, .footer-contact {
+        margin-bottom: 30px;
+    }
+}
+
   
   /* Estilo das redes sociais flutuantes */
   /* Estilo das redes sociais flutuantes */
@@ -476,4 +528,162 @@ section{
 
 .btnsent{
     align-items: center;
+}
+
+
+/* Consultoria */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Seção: Introdução à Consultoria */
+.intro {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Seção: Como a Consultoria Ajuda */
+.how-we-help {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.how-we-help h2 {
+    font-size: 32px;
+    color: #f0a500;
+    margin-bottom: 20px;
+}
+
+.how-we-help ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.how-we-help ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Seção: Metodologias */
+.methodologies {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+}
+
+.methodologies h2, .approach h3 {
+    color: #f0a500;
+}
+
+.methodologies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.methodologies ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Seção: Estudo de Caso */
+.case-study {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.case-study h2 {
+    color: #f0a500;
+}
+
+.case-details ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.case-details ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Seção: Depoimentos */
+.testimonials {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Seção: Cursos */
+.courses {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.courses ul {
+    list-style: none;
+    padding: 0;
+}
+
+.courses ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Seção: CTA */
+.cta {
+    background-color: #f0a500;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.cta .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cta .btn:hover {
+    background-color: #555;
 }
