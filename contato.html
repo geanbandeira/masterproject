@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamentos - MASTER PROJECT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Fonte de ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+    <!-- Banner -->
+   <div class="banner">
+
+    <!-- inicio conteiner-->
+    <div class="container">
+
+        <!--inicio navegação-->
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="MASTER PROJECT" width="125px">
+            </div>
+
+            <!--incio nav-->
+            <nav>
+                <ul id="MenuItens">
+                  <li> <a href="index.html" title="Inicio">Início</a></li>
+                  <li> <a href="consultoria.html" title="Consultoria">Consultoria</a></li>
+                  <li> <a href="treinamentos.html" title="Treinamentos">Treinamentos</a></li>
+                  <li> <a href="conteudos.html" title="">Conteúdos</a></li>
+                  <li> <a href="empresa.html" title="Empresa">Empresa</a></li>
+                  <li> <a href="contatos.html" title="Contatos">Contatos</a></li>
+                </ul>
+            </nav>
+          <!-- fim nav -->
+      </div>
+
+      <!-- Redes sociais flutuantes -->
+      <div class="social-links">
+          <br>
+          <a href="https://wa.me/5511984231682" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:contato@masterproject.com.br" class="email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.instagram.com/masterprojectoficial" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+  </div>
+</div>
+
+  <!-- Banner -->
+  <div class="banner-contato">
+    <h1>Entre em Contato</h1>
+  </div>
+
+  <!-- Seção de Contato -->
+  <section class="contact-section">
+    <h2>Fale Conosco</h2>
+    <form id="contactForm" class="contact-form">
+        <input type="text" name="nome" placeholder="Seu Nome" required>
+        <input type="email" name="email" placeholder="Seu E-mail" required>
+        <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+        <button type="submit" class="btnsent">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Informações de Contato Rápido -->
+  <div class="quick-contact">
+    <div>
+        <i class="fas fa-phone-alt"></i>
+        <p>(11) 98423-1682</p>
+    </div>
+    <div>
+        <i class="fas fa-envelope"></i>
+        <p>contato@masterproject.com.br</p>
+    </div>
+    <div>
+        <i class="fas fa-map-marker-alt"></i>
+        <p>São Paulo, SP, Brasil</p>
+    </div>
+  </div>
+
+  <!-- Mapa Interativo -->
+  <section class="map-section">
+    <h2>Nos Encontre</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.850954156042!2d-46.78024202513362!3d-23.537862560728417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff0d9da21153%3A0x20fd439df1a3e498!2sAv.%20dos%20Autonomistas%2C%202561%20-%20Vila%20Yara!5e0!3m2!1spt-BR!2sbr!4v1726165707634!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section>
+    <div class="faq-container-contato">
+      <div class="faq">
+        <div class="faq-question" onclick="toggleAnswer(0)">01. Como faço para entrar em contato?</div>
+        <div class="faq-answer">Você pode entrar em contato preenchendo o formulário acima ou enviando um e-mail diretamente para contato@masterproject.com.br.</div>
+      </div>
+
+      <div class="faq">
+        <div class="faq-question" onclick="toggleAnswer(1)">02. Qual o horário de atendimento?</div>
+        <div class="faq-answer">Nosso horário de atendimento é de segunda a sexta-feira, das 8h às 18h.</div>
+      </div>
+
+      <div class="faq">
+        <div class="faq-question" onclick="toggleAnswer(2)">03. Vocês oferecem serviços em todo o Brasil?</div>
+        <div class="faq-answer">Sim, oferecemos serviços de consultoria e treinamento para empresas em todo o território nacional.</div>
+      </div>
+    </div>
+    <br>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Sobre Nós</h3>
+        <p>Somos uma empresa especializada em consultoria de projetos, processos e metodologias ágeis.</p>
+        <p>Ajudamos negócios a alcançarem resultados eficientes com inovação e agilidade.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Links Úteis</h3>
+        <ul>
+          <li> <a href="index.html" title="Inicio">Início</a></li>
+          <li> <a href="consultoria.html" title="Consultoria">Consultoria</a></li>
+                <li> <a href="treinamentos.html" title="Treinamentos">Treinamentos</a></li>
+                <li> <a href="conteudos.html" title="">Conteúdos</a></li>
+                <li> <a href="empresa.html" title="Empresa">Empresa</a></li>
+                <li> <a href="contatos.html" title="Contatos">Contatos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contato</h3>
+        <p>Email: contato@masterproject.com.br</p>
+        <p>WhatsApp: (11) 984231682</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Master Project - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
