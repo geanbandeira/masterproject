@@ -299,7 +299,7 @@ h2 {
 }
 
 .faq-container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -737,4 +737,138 @@ header .btn:hover {
 .courses .card p {
     font-size: 16px;
     color: #000000;
+}
+
+/*Contato*/
+/* Banner com Parallax */
+.banner-contato {
+    background: linear-gradient(135deg,#2980b9, #00324f);;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.banner-contato h1 {
+    font-size: 3.5em;
+    animation: textFadeIn 2s ease-out;
+    color: white;
+}
+
+@keyframes textFadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Seção de Contato */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0a3d62;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideInFromRight 1s ease-out;
+}
+
+@keyframes slideInFromLeft {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInFromRight {
+    0% { opacity: 0; transform: translateX(50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0a3d62;
+    transform: scale(1.02);
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #0a3d62;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #badc58;
+}
+
+/* Informações de Contato Rápido */
+.quick-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.quick-contact div {
+    flex: 1;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.quick-contact div:hover {
+    transform: scale(1.1);
+}
+
+.quick-contact i {
+    font-size: 2em;
+    color: #0a3d62;
+    margin-bottom: 10px;
+}
+
+/* Mapa Interativo */
+.map-section {
+    padding: 50px 0;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+.map-section iframe {
+    width: 80%;
+    height: 400px;
+    border: none;
+}
+.faq-container-contato {
+    max-width: 1000px;
+    margin: 0 auto;
 }
