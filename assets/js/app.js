@@ -152,3 +152,47 @@ document.addEventListener("DOMContentLoaded", () => {
           .catch(err => console.error('Error loading content:', err));
   });
 });
+
+//consultoria
+// Interações com o Header
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.querySelector('.header-btn');
+  
+  btn.addEventListener('mouseover', () => {
+      btn.style.boxShadow = '0 10px 20px rgba(255, 126, 95, 0.5)';
+  });
+
+  btn.addEventListener('mouseleave', () => {
+      btn.style.boxShadow = 'none';
+  });
+
+  // Pode-se adicionar mais interações conforme a necessidade
+});
+
+//conteúdo
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.conteudo-card');
+
+  cards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+          card.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+      });
+
+      card.addEventListener('mouseleave', () => {
+          card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+      });
+  });
+
+  // Animação de fade-in ao rolar a página
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('fade-in');
+          }
+      });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.conteudo-card').forEach(card => {
+      observer.observe(card);
+  });
+});
