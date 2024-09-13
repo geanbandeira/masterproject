@@ -872,3 +872,298 @@ header .btn:hover {
     max-width: 1000px;
     margin: 0 auto;
 }
+
+/*empresa*/
+.empresa-banner {
+    background: url('assets/img/empresa-banner.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.empresa-intro {
+    max-width: 600px;
+    animation: fadeIn 2s;
+}
+
+.empresa-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.empresa-intro p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.servicos {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.servico-item {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.5s ease;
+}
+
+.depoimentos {
+    padding: 50px 0;
+    background-color: #eee;
+}
+
+.depoimento-item {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+}
+
+[data-anim].visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+.empresa-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*Consultoria*/
+/* Estilos para consultoria-header */
+.consultoria-header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-container {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.header-content {
+    max-width: 600px;
+}
+
+.header-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    animation: fadeInDown 1.2s ease-out;
+}
+
+.header-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1.4s ease-out;
+}
+
+.header-btn {
+    background-color: #ff7e5f;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 1.6s ease-out;
+}
+
+.header-btn:hover {
+    background-color: #feb47b;
+}
+
+.header-graphic {
+    width: 400px;
+    animation: slideInRight 1.5s ease-out;
+}
+
+.header-graphic img {
+    width: 100%;
+    height: auto;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.scroll-indicator span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: scrollIndicator 1.5s infinite;
+}
+
+.scroll-indicator span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.scroll-indicator span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scrollIndicator {
+    0%, 20% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+
+/*conteudo*/
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.conteudos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.conteudo-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.conteudo-card:hover {
+    transform: translateY(-10px);
+}
+
+.conteudo-image img {
+    width: 100%;
+    display: block;
+}
+
+.conteudo-info {
+    padding: 20px;
+}
+
+.conteudo-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1e3c72;
+}
+
+.conteudo-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7e5f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #feb47b;
+}
