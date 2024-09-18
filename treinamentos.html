@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinamentos - MASTER PROJECT</title>
     <link rel="stylesheet" href="assets/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Fonte de ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Banner -->
-    <div class="banner">
-
-        <!-- inicio conteiner-->
-        <div class="container">
-
             <!--inicio navegação-->
             <div class="navbar">
 
@@ -28,35 +26,36 @@
                         <li> <a href="treinamentos.html" title="Treinamentos">Treinamentos</a></li>
                         <li> <a href="conteudos.html" title="">Conteúdos</a></li>
                         <li> <a href="empresa.html" title="Empresa">Empresa</a></li>
-                        <li> <a href="contatos.html" title="Contatos">Contatos</a></li>
+                        <li> <a href="contato.html" title="Contato">Contato</a></li>
                     </ul>
                 </nav>
                 <!--fim nav-->
-
-                <ion-icon name="cart-outline"></ion-icon>
-            </div>
+        <!-- Redes sociais flutuantes -->
+        <div class="social-links">
+            <br>
+            <a href="https://wa.me/5511984231682" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:contato@masterproject.com.br" class="email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/masterprojectoficial" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
             <!--fim navegação-->
 
             <!--inicio banner-->
-            <div class="linha">
-
-                <div class="col-2">
-                    <h1>Capacitação para Excelência em Gestão de Projetos</h1>
-                    <p>Explore nossos treinamentos em gerenciamento de projetos, processos de negócios, e transformação digital, ministrados por especialistas certificados.</p>
-                    <br><a href="#cursos" class="btn">Ver Cursos &#8594;</a>
+            <!-- Header da Consultoria -->
+            <header class="treinamento-header">
+                <div class="header-container">
+                    <div class="header-content">
+                        <h1 class="header-title">Treinamentos de Excelência</h1>
+                        <p class="header-description">Capacitando sua equipe com métodos práticos e inovadores</p>
+                        <a href="#" class="btn header-btn">Descubra Mais</a>
+                    </div>
                 </div>
-                <div class="col-2">
-                    <img src="assets/img/banner2.jpg" alt="">
+                <div class="scroll-indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-
-            </div>
-            <!--fim banner-->
-
-        </div>
-        <!-- fim conteiner-->
-
-    </div>
-    <!--fim banner main-->
+            </header>
 
     <!-- Início Seção de Treinamentos -->
     <div class="categorias" id="cursos">
@@ -123,7 +122,7 @@
                     <li> <a href="treinamentos.html" title="Treinamentos">Treinamentos</a></li>
                     <li> <a href="conteudos.html" title="">Conteúdos</a></li>
                     <li> <a href="empresa.html" title="Empresa">Empresa</a></li>
-                    <li> <a href="contatos.html" title="Contatos">Contatos</a></li>
+                    <li> <a href="contato.html" title="Contato">Contato</a></li>
             </ul>
           </div>
   
@@ -141,7 +140,11 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/app.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
 
