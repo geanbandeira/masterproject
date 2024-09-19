@@ -53,6 +53,7 @@ body {
 .navbar .logo img {
     max-width: 125px; /* Tamanho do logotipo */
     margin-right: 50px;
+    width: 125px;
 }
 
 .navbar nav ul {
@@ -810,11 +811,11 @@ header .btn:hover {
 /*Contato*/
 /* Banner com Parallax */
 .banner-contato {
-    background: linear-gradient(135deg,#2980b9, #00324f);;
+    background: linear-gradient(135deg, #003366, #000000);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 28vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1023,7 +1024,7 @@ header .btn:hover {
 /*Treinamentos*/
 /* Estilos para treinamentos-header */
 .treinamento-header {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #00324f 0%, #000000 100%);
     height: 500px;
     display: flex;
     align-items: center;
@@ -1141,7 +1142,7 @@ header .btn:hover {
 /*Consultoria*/
 /* Estilos para consultoria-header */
 .consultoria-header {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #00324f 0%, #000000 100%);
     height: 500px;
     display: flex;
     align-items: center;
