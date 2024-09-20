@@ -1,3 +1,11 @@
+//menumobile
+const hamburger = document.querySelector('.menu-hamburger');
+    const navbar = document.querySelector('.navbar');
+
+    hamburger.addEventListener('click', () => {
+        navbar.classList.toggle('open');
+    });
+
 //foquete, habilidade, comunidade
   document.addEventListener("DOMContentLoaded", () => {
     const blocks = document.querySelectorAll('.block');
