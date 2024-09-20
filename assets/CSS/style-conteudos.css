@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-padrao: #00324f;
+    --cor-padrao-hover: rgb(243, 243, 243);
+    --cor-font: #fff;
+    --cor-font-p: #555;
+    --cor-btn: #00324f;
+    --cor-btn-hover: #000;
+    --cor-btn-font: #000;
+    --cor-font-corpo: #555;
+    --cor-font-corpo-leve: #777;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Navbar responsiva */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00324f;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo img {
+    max-width: 125px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #00324f;
+    border-radius: 5px;
+}
+
+/* Menu Hamburguer (Mobile) */
+.menu-hamburger {
+    display: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Menu Dropdown oculto por padrão */
+.navbar nav ul.menu-dropdown {
+    display: none;
+    flex-direction: column;
+    background-color: #00324f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 999;
+}
+
+.navbar nav ul.menu-dropdown li {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar nav ul.menu-dropdown li a {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar.open ul.menu-dropdown {
+    display: flex;
+}
+
+/* Redes sociais flutuantes ajustadas */
+.social-links {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links a.whatsapp { background-color: #25D366; }
+.social-links a.email { background-color: #D44638; }
+.social-links a.instagram { background-color: #E4405F; }
+
+.social-links a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Cards de conteúdo */
+.conteudos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.conteudo-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.conteudo-card:hover {
+    transform: translateY(-10px);
+}
+
+.conteudo-image img {
+    width: 100%;
+    display: block;
+}
+
+.conteudo-info {
+    padding: 20px;
+}
+
+.conteudo-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1e3c72;
+}
+
+.conteudo-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7e5f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #feb47b;
+}
+
+/* Rodapé */
+footer {
+    background-color: #00324f;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-about, .footer-links, .footer-contact {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-about h3, .footer-links h3, .footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #f0a500;
+}
+
+.footer-about p, .footer-contact p {
+    line-height: 1.6;
+    color: #fff;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #f0a500;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #00324f;
+    color: #fff;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar nav ul {
+        display: none;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    .navbar.open nav ul {
+        display: flex;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about, .footer-links, .footer-contact {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .conteudos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .conteudo-info h3 {
+        font-size: 1.25rem;
+    }
+
+    .conteudo-info p {
+        font-size: 0.875rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+}
+
+
+/*conteudo*/
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.conteudos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.conteudo-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.conteudo-card:hover {
+    transform: translateY(-10px);
+}
+
+.conteudo-image img {
+    width: 100%;
+    display: block;
+}
+
+.conteudo-info {
+    padding: 20px;
+}
+
+.conteudo-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1e3c72;
+}
+
+.conteudo-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7e5f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #feb47b;
+}
