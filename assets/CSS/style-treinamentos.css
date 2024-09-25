@@ -335,7 +335,7 @@ footer {
     }
 }
 
-
+/*Cursos treinamentos*/
 .categorias {
     margin: 50px 0;
     background-color: #f9f9f9;
@@ -348,11 +348,17 @@ footer {
     text-align: center;
 }
 
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .col-3 {
-    flex-basis: 40%;
+    flex-basis: 30%;  /* Aumentei o tamanho para 30% no desktop */
     margin: 15px;
     background-color: white;
-    padding: auto;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s;
@@ -375,10 +381,33 @@ footer {
     margin: 10px 0;
 }
 
-.col-3:hover{
+.col-3:hover {
     transform: scale(1.1);
-
 }
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .col-3 {
+        flex-basis: 45%;  /* Em telas médias (até 1024px), 45% para aumentar a legibilidade */
+    }
+}
+
+@media (max-width: 768px) {
+    .col-3 {
+        flex-basis: 45%;  /* Mantive 45% em tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .col-3 {
+        flex-basis: 100%;  /* No mobile, cada coluna ocupa 100% */
+        margin: 10px 0;
+    }
+}
+
+
+
+
 .titulo{
     position: relative;
     line-height: 60px;
