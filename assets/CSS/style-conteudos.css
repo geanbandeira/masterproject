@@ -209,8 +209,7 @@ footer {
 /* Título da Seção */
 /* Gradiente de fundo e estilos principais */
 .section-title {
-    background: linear-gradient(135deg, #00324f 0%, #000000 100%);
-    color: transparent;
+    color: #00324f;
     font-size: 3.5rem;
     font-weight: 700;
     text-align: center;
