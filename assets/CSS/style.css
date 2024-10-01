@@ -486,7 +486,7 @@ body {
     padding: 10px;
 }
 
-.brand-img img {
+.brand-img{
     width: 400px; /* Ajustando a largura para manter um visual agradável */
     height: 300px;
     width: 100%; /* Mantém a largura completa do contêiner pai */
@@ -516,7 +516,7 @@ body {
     .carousel-track-img {
         gap: 10px; /* Diminui ainda mais o espaçamento para telas menores */
     }
-    .brand-img img {
+    .brand-img {
         max-width: 250px; /* Limita o tamanho no mobile */
     }
 }
