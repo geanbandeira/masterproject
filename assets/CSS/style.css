@@ -405,7 +405,7 @@ body {
     overflow-x: hidden;
 }
 
-/*Logos em movimento marcas*/
+/*Logos em movimento*/
 .carousel {
     width: 100%;
     height: 150px; /* Altura do carrossel */
@@ -464,64 +464,6 @@ body {
         max-width: 250px; /* Limita tamanho no mobile */
     }
 }
-
-/*Carrosel aulas presenciais*/
-/* Configurações para o carrossel */
-.carousel-img {
-    width: 100%;
-    overflow: hidden;
-.carousel-track-img {
-    display: flex;
-    gap: 30px;
-    animation: scroll 40s linear infinite; /* Mais lento para dar mais tempo de visualização */
-    animation: scroll 40s linear infinite;
-    white-space: nowrap;
-}
-
-.brand-img {
-    flex: 0 0 auto; /* Garante que os itens não encolham */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-.brand-img{
-    width: 400px; /* Ajustando a largura para manter um visual agradável */
-    height: 300px;
-    width: 100%; /* Mantém a largura completa do contêiner pai */
-    max-width: 400px; /* No desktop, a imagem não ficará maior que 400px */
-    height: auto; /* Mantém a proporção da imagem */
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-200%); /* Desloca a lista completa para a esquerda */
-        transform: translateX(-200%);
-    }
-}
-/* Responsividade */
-@media screen and (max-width: 768px) {
-    .carousel-track-img {
-        gap: 20px; /* Reduz o espaçamento no mobile */
-    }
-    .brand-img img {
-        max-width: 300px; /* Ajusta para um tamanho médio no mobile */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .carousel-track-img {
-        gap: 10px; /* Diminui ainda mais o espaçamento para telas menores */
-    }
-    .brand-img {
-        max-width: 250px; /* Limita o tamanho no mobile */
-    }
-}
-
-
 
 .container-2 {
     display: flex;
@@ -723,3 +665,80 @@ body {
 }
 
 /* Também verifique os elementos filhos dentro dessas classes */
+
+.carousel-img {
+    width: 100%;
+    height: 250px; /* Aumenta a altura do carrossel */
+    overflow: hidden;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    position: relative;
+}
+
+.carousel-track-img {
+    display: flex;
+    gap: 30px; /* Ajusta o espaçamento entre marcas */
+    animation: scroll 60s linear infinite;
+    white-space: nowrap;
+    align-items: center; /* Garante que as imagens fiquem centralizadas verticalmente */
+}
+
+.brand-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Evita que as imagens encolham */
+    height: 100%; /* Ocupa toda a altura do container */
+    width: 250px; /* Define uma largura consistente para as imagens */
+}
+
+.brand-img img {
+    max-height: 100%; /* Ocupa a altura total do container */
+    max-width: 100%; /* Garante a largura máxima */
+    object-fit: contain; /* Mantém as proporções da imagem */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsividade */
+@media screen and (max-width: 1768px) {
+    .carousel-img {
+        height: 200px; /* Ajuste para telas menores */
+    }
+    .brand-img {
+        width: 200px; /* Reduz a largura das imagens */
+    }
+    .carousel-track-img {
+        gap: 20px; /* Reduz o espaçamento entre as imagens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-img {
+        height: 180px; /* Reduz a altura no mobile */
+    }
+    .brand-img {
+        width: 180px; /* Ajusta a largura no mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-img {
+        height: 150px; /* Altura menor para telas pequenas */
+    }
+    .brand-img {
+        width: 150px; /* Ajusta o tamanho da imagem */
+    }
+    .carousel-track-img {
+        gap: 10px; /* Menor espaçamento no mobile */
+    }
+}
