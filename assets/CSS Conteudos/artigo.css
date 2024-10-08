@@ -9,6 +9,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
 .navbar {
     position: fixed;
     top: 0;
@@ -232,20 +233,6 @@ header {
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
 
 .container {
     width: 80%;
@@ -314,6 +301,7 @@ header {
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #333;
 }
 
 p {
@@ -337,4 +325,50 @@ h2 {
 ul, ol {
     margin-left: 20px;
     margin-bottom: 20px;
+}
+
+.img-artigo1 {
+    width: 100%;
+    height: auto;
+    max-width: 800px; /* Limita a largura máxima da imagem */
+    margin: 0 auto; /* Garante que a imagem fique centralizada horizontalmente */
+    display: block; /* Garante que o margin auto funcione corretamente */
+}
+
+/* Defina a largura máxima para o container da página */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Para evitar que imagens se excedam no tamanho da tela */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo das redes sociais flutuantes */
+.social-links {
+    position: fixed;
+    bottom: 20px; /* Distância da parte inferior */
+    right: 20px; /* Distância da direita */
+    z-index: 1000; /* Garante que fica sobre outros elementos */
+  
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento maior entre os ícones */
+}
+
+.styled-link {
+    color: #0056b3; /* Cor personalizada para o link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Torna o link mais destacado */
+    border-bottom: 2px solid transparent; /* Cria um efeito de borda inferior */
+    transition: all 0.3s ease; /* Suaviza as transições */
+}
+
+.styled-link:hover {
+    color: #003580; /* Altera a cor ao passar o mouse */
+    border-bottom: 2px solid #003580; /* Adiciona uma borda ao passar o mouse */
 }
