@@ -346,11 +346,18 @@ footer {
     flex-basis: 40%;
     margin: 15px;
     background-color: white;
-    padding: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s;
+    overflow: hidden;
+    position: relative; /* Necessário para aplicar o z-index corretamente */
 }
+
+.col-3:hover {
+    transform: scale(1.05);
+    z-index: 10; /* Coloca o item acima dos outros ao passar o mouse */
+}
+
 
 .col-3 img {
     max-width: 100%;
@@ -369,10 +376,8 @@ footer {
     margin: 10px 0;
 }
 
-.col-3:hover{
-    transform: scale(1.1);
 
-}
+
 .titulo{
     position: relative;
     line-height: 60px;
