@@ -538,3 +538,48 @@ footer {
         transform: translateY(10px);
     }
 }
+
+.call-to-action-consultoria {
+    background-color: #e3f2fd; /* Fundo suave em azul claro */
+    padding: 30px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 40px 0; /* Espaçamento externo superior e inferior */
+}
+
+.call-to-action-consultoria h2 {
+    color: #0277bd; /* Cor do título azul escuro */
+    font-size: 24px; /* Tamanho da fonte do título */
+    font-weight: bold; /* Título em negrito */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.call-to-action-consultoria p {
+    color: #555; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+}
+
+.btn-consultoria {
+    background-color: #0288d1; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 15px 40px; /* Espaçamento interno do botão */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeitos de transição */
+}
+
+.btn-consultoria:hover {
+    background-color: #0277bd; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+.btn-consultoria:active {
+    background-color: #01579b; /* Cor ao clicar */
+    transform: scale(0.98); /* Diminui levemente o botão ao clicar */
+}

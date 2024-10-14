@@ -301,6 +301,58 @@ footer {
     background-color: #45a049;
 }
 
+.btn-final {
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 15px 30px; /* Espaçamento interno do botão */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: all 0.3s ease; /* Transição para suavizar efeitos */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o botão */
+    margin: 20px 0; /* Margem superior e inferior */
+    
+}
+
+.btn-final:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Sombra maior ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de elevação ao passar o mouse */
+    letter-spacing: 1px; /* Aumenta o espaçamento entre letras ao passar o mouse */
+}
+
+.btn-final:active {
+    background-color: #3e8e41; /* Cor de fundo ao clicar */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra menor ao clicar */
+    transform: translateY(1px); /* Botão afunda levemente ao clicar */
+}
+
+.call-to-action {
+    background-color: #f9f9f9; /* Fundo suave para destaque */
+    padding: 30px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 40px 0; /* Espaçamento externo superior e inferior */
+}
+
+.call-to-action h2 {
+    color: #333; /* Cor do título */
+    font-size: 24px; /* Tamanho da fonte do título */
+    font-weight: bold; /* Título em negrito */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.call-to-action p {
+    color: #666; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+}
+
+
 /* Ajustes para mobile */
 @media (max-width: 768px) {
     .linha {
@@ -470,6 +522,11 @@ body {
     }
 }
 
+.block.visible {
+    opacity: 1; /* Torna visível */
+    transform: translateY(0); /* Remove o deslocamento */
+  }
+
 .container-2 {
     display: flex;
     justify-content: center;
@@ -492,16 +549,24 @@ body {
     height: 80px;
 }
 
-h3 {
+  h3 {
     font-weight: normal;
-    color: var(--cor-font-corpo);
-}
+    color: #333;
+  }
 
-p {
+  p {
     margin-top: 10px;
     font-size: 16px;
     color: #333;
-}
+  }
+
+  .header-message h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
 
 /* Media query para telas menores */
 @media (max-width: 768px) {
@@ -522,18 +587,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  
-.block {
-    opacity: 0; /* Inicialmente invisível */
-    transform: translateY(30px); /* Inicialmente deslocado para baixo */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-  
-  .block.visible {
-    opacity: 1; /* Torna o bloco visível */
-    transform: translateY(0); /* Move o bloco para a posição original */
-  }
 
 
 h2 {
@@ -664,7 +718,7 @@ body {
     overflow-x: hidden; /* Isso já está no código */
 }
 
-.carousel, .linha, .container-2, .gallery {
+.carousel, .linha, .gallery {
     overflow-x: hidden;
     width: 100%;
 }
