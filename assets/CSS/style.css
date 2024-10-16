@@ -287,18 +287,26 @@ footer {
 }
 
 .btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    background-color: #0288d1; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 15px 40px; /* Espaçamento interno do botão */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeitos de transição */
 }
 
 .btn:hover {
-    background-color: #45a049;
+    background-color: #00324f; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+.btn:active {
+    background-color: #00324f; /* Cor ao clicar */
+    transform: scale(0.98); /* Diminui levemente o botão ao clicar */
 }
 
 .btn-final {
