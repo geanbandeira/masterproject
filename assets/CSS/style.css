@@ -238,6 +238,10 @@ footer {
     align-items: center;
 }
 
+.p-titulo{
+    text-align: justify;
+
+}
 
 /* Estilos principais */
 .linha {
@@ -250,17 +254,18 @@ footer {
 }
 
 .col-2 {
-    flex-basis: 45%;
-    min-width: 300px;
-    text-align: left;
+    flex-basis: 45%;    /* Controla a largura da coluna, 45% do container pai */
+    min-width: 300px;   /* Define uma largura mínima para a coluna */
+    text-align: left;   /* Alinha o conteúdo à esquerda */
+    position: relative; /* Para evitar problemas com posicionamento de elementos internos */
 }
 
-.col-2 img {
-    max-width: 100%;
-    padding: 20px 0;
-    opacity: 0;
-    animation: fadeIn 1.5s forwards;
+/* Classe que mostra a imagem com opacidade total */
+.show {
+    opacity: 1;  /* Torna a imagem visível */
 }
+
+
 
 @keyframes fadeIn {
     to {
