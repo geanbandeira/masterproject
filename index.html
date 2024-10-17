@@ -80,14 +80,15 @@
 <div class="linha">
   <div class="col-2">
       <h1>TRANSFORMANDO DESAFIOS EM OPORTUNIDADES DE CRESCIMENTO</h1>
-      <p>Na Master Project, oferecemos consultoria em gestão de projetos, processos e transformação digital. 
+      <p class="p-titulo">Na Master Project, oferecemos consultoria em gestão de projetos, processos e transformação digital. 
           Com consultores certificados e experientes, ajudamos organizações a superar desafios, implementar melhorias e alcançar resultados.</p>
           <br><a href="https://api.whatsapp.com/send?phone=5511984231682&text=Quero%20saber%20mais%20sobre%20a%20consultoria%20da%20Master%20Project" class="btn">Mais Informações &#8594;</a>
 
   </div>
   <div class="col-2">
-      <img src="/masterproject/assets/img/banner1.jpg" alt="Imagem de uma reunião em uma empresa, Master Project">
+    <img id="banner-img" src="/masterproject/assets/img/banner1.jpg" alt="Imagem de uma reunião em uma empresa, Master Project">
   </div>
+
 </div>
 <!--fim banner--> 
 
@@ -98,21 +99,29 @@
       <div class="brand"><img src="/masterproject/assets/img/logo3.png" alt="Logo Clariens Educação"></div>
       <div class="brand"><img src="/masterproject/assets/img/logo4.jpg" alt="Logo Espro, Ensino Social Profissionalizante"></div>
       <div class="brand"><img src="/masterproject/assets/img/logo5.png" alt="Logo Trabbe"></div>
+      <div class="brand"><img src="/masterproject/assets/img/logo6.png" alt="Logo PMI"></div>
+      <div class="brand"><img src="/masterproject/assets/img/logo7.png" alt="Logo BPM"></div>
       <div class="brand"><img src="/masterproject/assets/img/logo1.png" alt="Logo Instituto Euvaldo Lodi"></div>
       <div class="brand"><img src="/masterproject/assets/img/logo2.png" alt="Logo Cia de Talentos"></div>
       <div class="brand"><img src="/masterproject/assets/img/logo3.png" alt="Logo Clariens Educação"></div>
       <div class="brand"><img src="/masterproject/assets/img/logo4.jpg" alt="Logo Espro, Ensino Social Profissionalizante"></div>
+      <div class="brand"><img src="/masterproject/assets/img/logo5.png" alt="Logo Trabbe"></div>
+      <div class="brand"><img src="/masterproject/assets/img/logo6.png" alt="Logo PMI"></div>
+      <div class="brand"><img src="/masterproject/assets/img/logo7.png" alt="Logo BPM"></div>
+      <div class="brand"><img src="/masterproject/assets/img/logo1.png" alt="Logo Instituto Euvaldo Lodi"></div>
+      <div class="brand"><img src="/masterproject/assets/img/logo2.png" alt="Logo Cia de Talentos"></div>
+      <div class="brand"><img src="/masterproject/assets/img/logo3.png" alt="Logo Clariens Educação"></div>
+      <div class="brand"><img src="/masterproject/assets/img/logo4.jpg" alt="Logo Espro, Ensino Social Profissionalizante"></div>
+      <div class="brand"><img src="/masterproject/assets/img/logo6.png" alt="Logo PMI"></div>
+      <div class="brand"><img src="/masterproject/assets/img/logo7.png" alt="Logo BPM"></div>
       <div class="brand"><img src="/masterproject/assets/img/logo5.png" alt="Logo Trabbe"></div>
       <div class="brand"><img src="/masterproject/assets/img/logo1.png" alt="Logo Instituto Euvaldo Lodi"></div>
       <div class="brand"><img src="/masterproject/assets/img/logo2.png" alt="Logo Cia de Talentos"></div>
       <div class="brand"><img src="/masterproject/assets/img/logo3.png" alt="Logo Clariens Educação"></div>
       <div class="brand"><img src="/masterproject/assets/img/logo4.jpg" alt="Logo Espro, Ensino Social Profissionalizante"></div>
       <div class="brand"><img src="/masterproject/assets/img/logo5.png" alt="Logo Trabbe"></div>
-      <div class="brand"><img src="/masterproject/assets/img/logo1.png" alt="Logo Instituto Euvaldo Lodi"></div>
-      <div class="brand"><img src="/masterproject/assets/img/logo2.png" alt="Logo Cia de Talentos"></div>
-      <div class="brand"><img src="/masterproject/assets/img/logo3.png" alt="Logo Clariens Educação"></div>
-      <div class="brand"><img src="/masterproject/assets/img/logo4.jpg" alt="Logo Espro, Ensino Social Profissionalizante"></div>
-      <div class="brand"><img src="/masterproject/assets/img/logo5.png" alt="Logo Trabbe"></div>
+      <div class="brand"><img src="/masterproject/assets/img/logo6.png" alt="Logo PMI"></div>
+      <div class="brand"><img src="/masterproject/assets/img/logo7.png" alt="Logo BPM"></div>
   </div>
 </div>
 
@@ -355,5 +364,39 @@
       }
     }
     </script>
+    <script>
+      const bannerImages = [
+          '/masterproject/assets/img/banner2.jpg',
+          '/masterproject/assets/img/banner3.jpg',
+          '/masterproject/assets/img/banner4.jpg',
+          '/masterproject/assets/img/banner5.jpg',
+          '/masterproject/assets/img/banner1.jpg'
+      ];
+  
+      let bannerIndex = 0;
+      const bannerImg = document.getElementById('banner-img');
+  
+      function changeBannerImage() {
+          // Remove a classe 'show' para iniciar a transição de opacidade
+          bannerImg.classList.remove('show');
+  
+          // Aguarda o fim da animação de saída (opacidade 0)
+          setTimeout(() => {
+              bannerIndex = (bannerIndex + 1) % bannerImages.length;  // Alterna entre as imagens
+              bannerImg.src = bannerImages[bannerIndex];  // Muda a imagem
+  
+              // Aplica a classe 'show' para a nova imagem aparecer suavemente
+              bannerImg.classList.add('show');
+          }, 1500);  // Espera o tempo da transição (1.5s) antes de trocar a imagem
+      }
+  
+      // Inicializa a animação com a primeira imagem visível
+      bannerImg.classList.add('show');
+  
+      // Alterna as imagens a cada 3 segundos
+      setInterval(changeBannerImage, 5000);
+  </script>
+  
+
 </body>
 </html>

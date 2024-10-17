@@ -133,6 +133,9 @@
         </div>
     </div>
 </section>
+<div class="col-md-6 col-12">
+    <img id="banner-img" src="/masterproject/assets/img/banner1-consultoria.jpg" alt="Imagem de uma reunião em uma empresa, Master Project" class="img-fluid">
+</div>
 
 <!-- Testimonials Section -->
 <section class="testimonials">
@@ -215,6 +218,37 @@
         </div>
     </footer>
     <script src="/masterproject/assets/js/app.js"></script>
+    <script>
+        const bannerImages = [
+            '/masterproject/assets/img/banner2-consultoria.jpg',
+            '/masterproject/assets/img/banner3-consultoria.jpg',
+            '/masterproject/assets/img/banner4-consultoria.jpg',
+            '/masterproject/assets/img/banner1-consultoria.jpg'
+        ];
+    
+        let bannerIndex = 0;
+        const bannerImg = document.getElementById('banner-img');
+    
+        function changeBannerImage() {
+            // Remove a classe 'show' para iniciar a transição de opacidade
+            bannerImg.classList.remove('show');
+    
+            // Aguarda o fim da animação de saída (opacidade 0)
+            setTimeout(() => {
+                bannerIndex = (bannerIndex + 1) % bannerImages.length;  // Alterna entre as imagens
+                bannerImg.src = bannerImages[bannerIndex];  // Muda a imagem
+    
+                // Aplica a classe 'show' para a nova imagem aparecer suavemente
+                bannerImg.classList.add('show');
+            }, 1500);  // Espera o tempo da transição (1.5s) antes de trocar a imagem
+        }
+    
+        // Inicializa a animação com a primeira imagem visível
+        bannerImg.classList.add('show');
+    
+        // Alterna as imagens a cada 3 segundos
+        setInterval(changeBannerImage, 5000);
+    </script>
 </body>
 </html>
 
