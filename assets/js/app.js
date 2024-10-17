@@ -28,49 +28,53 @@ var kpiChart = new Chart(ctx, {
     }
 });
 
-const toggleButton = document.getElementById('dark-mode-toggle');
-const body = document.body;
-
-toggleButton.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-});
     
-//foquete, habilidade, comunidade
-  document.addEventListener("DOMContentLoaded", () => {
-    const blocks = document.querySelectorAll('.block');
-    
-    const observerOptions = {
-      root: null, // Observa em relação à viewport
-      rootMargin: '0px',
-      threshold: 0.1 // Quando 10% do elemento está visível
-    };
-    
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target); // Para parar de observar após a animação
-        }
-      });
-    }, observerOptions);
-    
-    blocks.forEach(block => {
-      observer.observe(block);
+document.addEventListener("DOMContentLoaded", () => {
+  const blocks = document.querySelectorAll('.block');
+  
+  const observerOptions = {
+    root: null, // Observa em relação à viewport
+    rootMargin: '0px',
+    threshold: 0.1 // Quando 10% do elemento está visível
+  };
+  
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        console.log("Bloco visível:", entry.target); // Depuração
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Para parar de observar após a animação
+      }
     });
+  }, observerOptions);
+  
+  blocks.forEach(block => {
+    observer.observe(block);
   });
+});
 
-  //faq
-  function toggleAnswer(index) {
-    const answers = document.querySelectorAll('.faq-answer');
-    const answer = answers[index];
-
-    // Toggle the display of the answer
-    if (answer.style.display === 'block') {
+function toggleAnswer(index) {
+  const question = document.getElementsByClassName('faq-question')[index];
+  const answer = document.getElementsByClassName('faq-answer')[index];
+  
+  if (question.classList.contains('active')) {
+      question.classList.remove('active');
       answer.style.display = 'none';
-    } else {
+  } else {
+      // Fechar todas as outras respostas
+      const allQuestions = document.getElementsByClassName('faq-question');
+      const allAnswers = document.getElementsByClassName('faq-answer');
+      
+      for (let i = 0; i < allQuestions.length; i++) {
+          allQuestions[i].classList.remove('active');
+          allAnswers[i].style.display = 'none';
+      }
+      
+      // Exibir a resposta clicada
+      question.classList.add('active');
       answer.style.display = 'block';
-    }
   }
+}
 
 //galeria de aulas presenciais
 const images = document.querySelectorAll('#gallery img');
