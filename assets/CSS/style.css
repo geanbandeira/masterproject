@@ -240,7 +240,11 @@ footer {
 
 .p-titulo{
     text-align: justify;
+}
 
+.p-descricao-cursos{
+    text-align: justify;
+    padding: 15px;
 }
 
 /* Estilos principais */
