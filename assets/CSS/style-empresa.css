@@ -435,3 +435,12 @@ footer {
     background-color: #616161; /* Cor ao clicar em cinza mais escuro */
     transform: scale(0.98); /* Diminui levemente o botão ao clicar */
 }
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}

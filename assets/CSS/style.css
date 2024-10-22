@@ -105,7 +105,6 @@ body {
     }
 }
 
-
 /* Estilo das redes sociais flutuantes */
 .social-links {
     position: fixed;
@@ -116,10 +115,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px; /* Espaçamento maior entre os ícones */
-}
-  
-
-  
+} 
 
 /*Footer*/
 footer {
@@ -134,7 +130,7 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -306,6 +302,7 @@ footer {
     font-weight: bold; /* Negrito */
     border-radius: 5px; /* Bordas arredondadas */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Efeitos de transição */
+    margin-bottom: 10px;
 }
 
 .btn:hover {
@@ -402,7 +399,7 @@ footer {
 .categorias {
     margin: 50px 0;
     background-color: #f9f9f9;
-    padding: 20px 0;
+    
 }
 
 .corpo-categorias {
@@ -614,50 +611,6 @@ h2 {
     margin-bottom: 40px;
 }
 
-.faq-container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.faq-question {
-    background-color: #fff;
-    color: #333;
-    padding: 15px 20px;
-    cursor: pointer;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.faq-answer {
-    display: none;
-    padding: 15px 20px;
-    background-color: #f1f1f1;
-    border-left: 4px solid #007bff;
-    border-radius: 0 8px 8px 8px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 1.6;
-    color: #555;
-}
-
-.faq-question:hover {
-    background-color: #e0e0e0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.faq-question.active {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.faq-question.active + .faq-answer {
-    display: block;
-}
-
 .gallery {
     display: flex;
     justify-content: space-between; /* Distribui as imagens igualmente */
@@ -818,3 +771,21 @@ body {
         gap: 10px; /* Menor espaçamento no mobile */
     }
 }
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.p-titulo{
+    margin: 5px;
+}
+
+html{
+    height: 100%;
+}
+

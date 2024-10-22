@@ -686,3 +686,64 @@ transform: translateY(0); /* Move o bloco para a posição original */
     background-color: #ef6c00; /* Cor ao clicar */
     transform: scale(0.98); /* Diminui levemente o botão ao clicar */
 }
+
+/*FAQ*/
+h2 {
+    text-align: center;
+    color: #444;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-question {
+    background-color: #fff;
+    color: #333;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px 20px;
+    background-color: #f1f1f1;
+    border-left: 4px solid #007bff;
+    border-radius: 0 8px 8px 8px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.faq-question:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.faq-question.active + .faq-answer {
+    display: block;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}

@@ -598,3 +598,12 @@ footer {
         max-width: 100%; /* Ajusta a largura em telas menores */
     }
 }
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
