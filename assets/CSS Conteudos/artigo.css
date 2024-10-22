@@ -226,12 +226,6 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    padding: 10px;
-    color: white;
-    text-align: center;
-}
 
 
 .container {
@@ -286,17 +280,71 @@ header {
 }
 
 /* Estilos gerais */
+/* Background com gradiente e animação suave */
+.titulo {
+    background: linear-gradient(135deg, #00324f, #000000);
+    padding: 50px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito de transição suave ao passar o mouse */
+.titulo:hover {
+    background: linear-gradient(135deg, #00324f, #000000);
+    transition: background 0.5s ease;
+}
+
+/* Tipografia personalizada */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Botão de call-to-action (CTA) */
+.cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff6600;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff3300;
+}
+
+/* Animação suave de aparição */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     padding-top: 80px; /* Espaçamento para evitar sobreposição com o menu */
 }
 
-header {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-}
 
 h1 {
     font-size: 2.5rem;
@@ -371,4 +419,13 @@ img {
 .styled-link:hover {
     color: #003580; /* Altera a cor ao passar o mouse */
     border-bottom: 2px solid #003580; /* Adiciona uma borda ao passar o mouse */
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }
