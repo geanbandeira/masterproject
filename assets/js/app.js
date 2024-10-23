@@ -238,3 +238,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdown = document.querySelector('.dropdown');
+  const dropdownContent = document.querySelector('.dropdown-content');
+
+  // Lidar com o clique no menu "Conteúdos" no mobile
+  dropdown.addEventListener('click', function () {
+      // Toggle o submenu para aparecer/desaparecer
+      dropdown.classList.toggle('active');
+  });
+
+  // Fechar o submenu se o usuário clicar fora do dropdown no mobile
+  document.addEventListener('click', function (event) {
+      if (!dropdown.contains(event.target)) {
+          dropdown.classList.remove('active');
+      }
+  });
+});
