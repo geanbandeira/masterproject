@@ -30,17 +30,17 @@ document.addEventListener("DOMContentLoaded", function() {
     playPauseBtn.addEventListener("click", function() {
         if (video.paused) {
             video.play();
-            playPauseBtn.textContent = "Pause";
+            playPauseBtn.textContent = "⏸️";
         } else {
             video.pause();
-            playPauseBtn.textContent = "Play";
+            playPauseBtn.textContent = "▶️";
         }
     });
 
     // Mute / Unmute functionality
     muteUnmuteBtn.addEventListener("click", function() {
         video.muted = !video.muted;
-        muteUnmuteBtn.textContent = video.muted ? "Unmute" : "Mute";
+        muteUnmuteBtn.textContent = video.muted ? "🔊" : "🔇";
     });
 
     // Seek bar
