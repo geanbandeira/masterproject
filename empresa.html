@@ -31,15 +31,22 @@
       <img src="/masterproject/assets/img/logo.png" alt="Logo da consultoria Master Project - Gestão Ágil e Transformação Digital">
     </div>
     <nav>
-        <ul class="nav-links">
-            <li> <a href="/masterproject/index.html" title="Inicio">Início</a></li>
-            <li> <a href="/masterproject/consultoria.html" title="Consultoria">Consultoria</a></li>
-            <li> <a href="/masterproject/treinamentos.html" title="Treinamentos">Treinamentos</a></li>
-            <li> <a href="/masterproject/conteudos.html" title="">Conteúdos</a></li>
-            <li> <a href="/masterproject/empresa.html" title="Empresa">Empresa</a></li>
-            <li> <a href="/masterproject/contato.html" title="Contato">Contato</a></li>
-        </ul>
-    </nav>
+      <ul class="nav-links">
+          <li> <a href="/masterproject/index.html" title="Inicio">Início</a></li>
+          <li> <a href="/masterproject/consultoria.html" title="Consultoria">Consultoria</a></li>
+          <li> <a href="/masterproject/treinamentos.html" title="Treinamentos">Treinamentos</a></li>
+          <li class="dropdown"> 
+            <a href="/masterproject/conteudos.html" title="Conteúdos">Conteúdos</a>
+            <ul class="dropdown-content">
+                <li><a href="/masterproject/assets/conteudos/artigo1.html" title="Metodologias Ágeis">Metodologias Ágeis</a></li>
+                <li><a href="/masterproject/assets/conteudos/artigo2.html" title="Projetos">Projetos</a></li>
+                <li><a href="/masterproject/assets/conteudos/artigo3.html" title="Processos">Processos</a></li>
+            </ul>
+        </li>
+          <li> <a href="/masterproject/empresa.html" title="Empresa">Empresa</a></li>
+          <li> <a href="/masterproject/contato.html" title="Contato">Contato</a></li>
+      </ul>
+  </nav>
     <div class="menu-hamburger">
         ☰ <!-- Ícone de hambúrguer (usado com CSS) -->
     </div>
@@ -59,26 +66,19 @@
     </div><br>
     <!-- fim das Redes sociais flutuantes -->
 
-  <section id="video-section" class="section">
-    <div class="container">
-      <h2>Sobre a Master Project</h2>
-        <h2>Assista ao Nosso Vídeo</h2>
-        <div class="video-wrapper">
-            <video id="master-video" class="responsive-video" preload="metadata" poster="video-thumbnail.jpg" autoplay muted>
-                <source src="/masterproject/assets/img/video-masterproject.mp4" type="video/mp4">
-                Seu navegador não suporta vídeos em MP4.
-            </video>
-            <div class="video-controls">
-                <button id="play-pause" class="control-btn">▶️</button> <!-- Play -->
-                <input type="range" id="seek-bar" class="seek-bar" value="0" max="100">
-                <span id="time-elapsed">0:00</span> / <span id="video-duration">0:00</span>
-                <button id="mute-unmute" class="control-btn">🔇</button> <!-- Mute -->
-                <input type="range" id="volume-bar" class="volume-bar" min="0" max="1" step="0.1" value="1">
-                <button id="fullscreen" class="control-btn">⛶</button> <!-- Fullscreen -->
-            </div>
-        </div>
-    </div>
-  </section>
+    <section id="video-section" class="section">
+      <div class="container">
+          <h2>Sobre a Master Project</h2>
+          <h3>Assista ao Nosso Vídeo</h3>
+          <div class="video-wrapper">
+              <iframe id="master-video" class="responsive-video" src="https://www.youtube.com/embed/NheN_7jDABs?autoplay=1&mute=1&start=15&quality=highres" 
+                  title="Master Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+              </iframe>
+          </div>
+      </div>
+    </section>
+  
 
     <!-- Seção de Serviços -->
     <section id="servicos" class="servicos">
