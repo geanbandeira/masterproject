@@ -220,8 +220,9 @@ footer {
   
 /* Cor específica para cada rede social */
 .social-links a.whatsapp { background-color: #25D366; }
-.social-links a.email { background-color: #D44638; }
 .social-links a.instagram { background-color: #E4405F; }
+.social-links a.linkedin { background-color: #0e76a8; }
+
   
 /* Aumenta levemente o tamanho ao passar o mouse */
 .social-links a:hover {
