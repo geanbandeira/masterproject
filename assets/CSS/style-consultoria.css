@@ -632,20 +632,26 @@ footer {
     color: #f4d03f;
 }
 
-/* Estilo para o submenu */
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: all; /* Permite que os itens do menu recebam eventos */
+    z-index: 999; /* Mantém o menu acima de outros elementos */
+  }
+  
 .dropdown-content {
-    display: none;
     position: absolute;
-    top: 40px;
-    left: 0;
     background-color: #00324f;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    min-width: 200px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    /* Adapta a largura para diferentes tamanhos de tela */
+    max-width: 80%;
     border-radius: 5px;
-}
+    list-style-type: none; /* Remove os marcadores */
+
+  }
 
 .dropdown-content li {
     margin: 0;
@@ -669,7 +675,7 @@ footer {
     }
 
     .dropdown-content {
-        transition: visibility 0s, opacity 0.5s ease-in-out;
+        transition:  opacity 0.5s ease-in-out;
         visibility: visible;
         opacity: 1;
     }
@@ -678,7 +684,7 @@ footer {
     .dropdown-content {
         visibility: hidden;
         opacity: 0;
-        transition: visibility 0.9s, opacity 0.9s ease-in-out;
+        transition: visibility 0.1s, opacity 0.1s ease-in-out;
     }
 
     .dropdown:hover .dropdown-content {
@@ -688,34 +694,44 @@ footer {
 
     /* Aumentar o tempo antes de esconder o submenu */
     .dropdown-content {
-        transition-delay: 5.5s; /* Submenu vai desaparecer depois de 1.5 segundos ao sair do hover */
+        transition-delay: 2.8s; /* Submenu vai desaparecer depois de 1.5 segundos ao sair do hover */
     }
 }
 
-/* Exibir submenu fixo no mobile quando clicar */
+@media screen and (max-width: 768px) {
+    .dropdown-content {
+      display: none; /* Initially hide the dropdown content */
+    }
+  
+    .dropdown.active .dropdown-content {
+      display: block; /* Show the dropdown content when the dropdown is active */
+    }
+  }
+
+/**/
+/* Adicionando uma classe para o menu ativo no mobile */
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilizando o botão do menu hambúrguer */
+.menu-hamburger {
+    display: none; /* Ocultar por padrão */
+    /* ... seus estilos para o botão hambúrguer ... */
+}
+
 @media screen and (max-width: 768px) {
     .menu-hamburger {
         display: block;
-        font-size: 24px;
-        color: white;
-        cursor: pointer;
     }
 
     .nav-links {
         display: none;
-        flex-direction: column;
     }
 
-    .nav-links li {
-        margin: 0;
-    }
-
-    .navbar.active .nav-links {
+    /* Adicionando um evento para mostrar/ocultar o menu no mobile */
+    .menu-hamburger.active + .nav-links {
         display: flex;
-    }
-
-    /* Exibir o submenu ao clicar em "Conteúdos" no mobile */
-    .dropdown.active .dropdown-content {
-        display: block;
     }
 }
