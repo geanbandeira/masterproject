@@ -237,7 +237,7 @@ body {
 .section-title {
     text-align: center;
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .conteudos-grid {
@@ -359,8 +359,8 @@ p {
 
 /* Estilos das seções */
 section {
-    padding: 40px 20px; /* Padding padrão para áreas internas */
-    margin: 20px auto; /* Margem para separação entre seções */
+    padding: 20px 5px; /* Padding padrão para áreas internas */
+    margin: 5px auto; /* Margem para separação entre seções */
     max-width: 1200px; /* Limite de largura da seção para telas grandes */
 }
 
