@@ -1223,3 +1223,131 @@ li {
         display: block;
     }
 }
+
+/*menu*/
+/* Estilo básico para o menu */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li:hover a {
+    color: #f4d03f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: all; /* Permite que os itens do menu recebam eventos */
+    z-index: 999; /* Mantém o menu acima de outros elementos */
+  }
+  
+.dropdown-content {
+    position: absolute;
+    background-color: #00324f;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /* Adapta a largura para diferentes tamanhos de tela */
+    max-width: 80%;
+    border-radius: 5px;
+    list-style-type: none; /* Remove os marcadores */
+
+  }
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content li a {
+    color: white;
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-content li a:hover {
+    background-color: #004770;
+}
+
+/* Exibir o submenu apenas quando passar o mouse em "Conteúdos" no desktop */
+@media screen and (min-width: 769px) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content {
+        transition:  opacity 0.5s ease-in-out;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* Delay para esconder o submenu, dando mais tempo para o usuário navegar */
+    .dropdown-content {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.1s, opacity 0.1s ease-in-out;
+    }
+
+    .dropdown:hover .dropdown-content {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* Aumentar o tempo antes de esconder o submenu */
+    .dropdown-content {
+        transition-delay: 2.8s; /* Submenu vai desaparecer depois de 1.5 segundos ao sair do hover */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-content {
+      display: none; /* Initially hide the dropdown content */
+    }
+  
+    .dropdown.active .dropdown-content {
+      display: block; /* Show the dropdown content when the dropdown is active */
+    }
+  }
+
+/**/
+/* Adicionando uma classe para o menu ativo no mobile */
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilizando o botão do menu hambúrguer */
+.menu-hamburger {
+    display: none; /* Ocultar por padrão */
+    /* ... seus estilos para o botão hambúrguer ... */
+}
+
+@media screen and (max-width: 768px) {
+    .menu-hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    /* Adicionando um evento para mostrar/ocultar o menu no mobile */
+    .menu-hamburger.active + .nav-links {
+        display: flex;
+    }
+}
