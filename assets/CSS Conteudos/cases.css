@@ -9,8 +9,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.titulo, .section {
-    padding-top: 100px; /* Adiciona um espaçamento para compensar a altura do menu */
+.titulo,
+.section {
+    padding-top: 100px;
+    /* Adiciona um espaçamento para compensar a altura do menu */
 }
 
 
@@ -78,8 +80,10 @@ body {
 
     .nav-links li {
         width: 100%;
-        padding: 15px 0; /* Aumenta o espaçamento interno vertical */
-        margin: 5px 0;   /* Adiciona espaçamento entre os itens */
+        padding: 15px 0;
+        /* Aumenta o espaçamento interno vertical */
+        margin: 5px 0;
+        /* Adiciona espaçamento entre os itens */
     }
 
     .menu-hamburger {
@@ -94,17 +98,21 @@ body {
 /* Estilo das redes sociais flutuantes */
 .social-links {
     position: fixed;
-    bottom: 20px; /* Distância da parte inferior */
-    right: 20px; /* Distância da direita */
-    z-index: 1000; /* Garante que fica sobre outros elementos */
-  
+    bottom: 20px;
+    /* Distância da parte inferior */
+    right: 20px;
+    /* Distância da direita */
+    z-index: 1000;
+    /* Garante que fica sobre outros elementos */
+
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espaçamento maior entre os ícones */
-  }
-  
-  /*Icones mídias social*/
-  .social-links a {
+    gap: 10px;
+    /* Espaçamento maior entre os ícones */
+}
+
+/*Icones mídias social*/
+.social-links a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,20 +123,30 @@ body {
     text-decoration: none;
     font-size: 1.5em;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
+}
+
 /* Cor específica para cada rede social */
-.social-links a.whatsapp { background-color: #25D366; }
-.social-links a.instagram { background-color: #E4405F; }
-.social-links a.linkedin { background-color: #0e76a8; }
-  
-  /* Aumenta levemente o tamanho ao passar o mouse */
-  .social-links a:hover {
-    transform: scale(1.1); /* Efeito de aumento */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
-  }
-  
-  /* Ajuste de alinhamento do botão */
+.social-links a.whatsapp {
+    background-color: #25D366;
+}
+
+.social-links a.instagram {
+    background-color: #E4405F;
+}
+
+.social-links a.linkedin {
+    background-color: #0e76a8;
+}
+
+/* Aumenta levemente o tamanho ao passar o mouse */
+.social-links a:hover {
+    transform: scale(1.1);
+    /* Efeito de aumento */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra para destacar */
+}
+
+/* Ajuste de alinhamento do botão */
 .btnsent {
     align-items: center;
 }
@@ -152,18 +170,23 @@ footer {
     margin: 0 auto;
 }
 
-.footer-about, .footer-links, .footer-contact {
+.footer-about,
+.footer-links,
+.footer-contact {
     flex: 1;
     margin: 20px;
 }
 
-.footer-about h3, .footer-links h3, .footer-contact h3 {
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3 {
     font-size: 20px;
     margin-bottom: 15px;
     color: #f0a500;
 }
 
-.footer-about p, .footer-contact p {
+.footer-about p,
+.footer-contact p {
     line-height: 1.6;
     color: #fff;
 }
@@ -205,7 +228,9 @@ footer {
         text-align: center;
     }
 
-    .footer-about, .footer-links, .footer-contact {
+    .footer-about,
+    .footer-links,
+    .footer-contact {
         margin-bottom: 30px;
     }
 }
@@ -233,26 +258,37 @@ body {
 /* Estilo das redes sociais flutuantes */
 .social-links {
     position: fixed;
-    bottom: 20px; /* Distância da parte inferior */
-    right: 20px; /* Distância da direita */
-    z-index: 1000; /* Garante que fica sobre outros elementos */
-  
+    bottom: 20px;
+    /* Distância da parte inferior */
+    right: 20px;
+    /* Distância da direita */
+    z-index: 1000;
+    /* Garante que fica sobre outros elementos */
+
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espaçamento maior entre os ícones */
+    gap: 10px;
+    /* Espaçamento maior entre os ícones */
 }
 
 .styled-link {
-    color: #0056b3; /* Cor personalizada para o link */
-    text-decoration: none; /* Remove o sublinhado */
-    font-weight: bold; /* Torna o link mais destacado */
-    border-bottom: 2px solid transparent; /* Cria um efeito de borda inferior */
-    transition: all 0.3s ease; /* Suaviza as transições */
+    color: #0056b3;
+    /* Cor personalizada para o link */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    font-weight: bold;
+    /* Torna o link mais destacado */
+    border-bottom: 2px solid transparent;
+    /* Cria um efeito de borda inferior */
+    transition: all 0.3s ease;
+    /* Suaviza as transições */
 }
 
 .styled-link:hover {
-    color: #003580; /* Altera a cor ao passar o mouse */
-    border-bottom: 2px solid #003580; /* Adiciona uma borda ao passar o mouse */
+    color: #003580;
+    /* Altera a cor ao passar o mouse */
+    border-bottom: 2px solid #003580;
+    /* Adiciona uma borda ao passar o mouse */
 }
 
 .footer-link {
@@ -292,7 +328,8 @@ body {
     transition: transform 0.4s ease-in-out, background 0.4s ease-in-out;
 }
 
-.section h1, .section h2 {
+.section h1,
+.section h2 {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 20px;
@@ -314,6 +351,7 @@ body {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -325,6 +363,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -343,7 +382,8 @@ body {
     color: white;
 }
 
-#apresentacao h1, #apresentacao p {
+#apresentacao h1,
+#apresentacao p {
     color: white;
 }
 
@@ -441,6 +481,7 @@ body {
         opacity: 0;
         transform: scale(0.8);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -449,7 +490,7 @@ body {
 
 /* Sessão 3: Nossos Clientes */
 #clientes {
-    background-color: #005b8a ;
+    background-color: #005b8a;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -539,6 +580,7 @@ body {
         opacity: 0;
         transform: translateX(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -568,6 +610,7 @@ body {
         opacity: 0;
         transform: translateX(20px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -597,6 +640,7 @@ body {
         opacity: 0;
         transform: rotate(-45deg);
     }
+
     to {
         opacity: 1;
         transform: rotate(0deg);
@@ -710,9 +754,11 @@ body {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
@@ -732,39 +778,54 @@ body {
 /*Logos em movimento*/
 .carousel {
     width: 100%;
-    height: 150px; /* Altura do carrossel */
+    height: 150px;
+    /* Altura do carrossel */
     overflow: hidden;
-    background-color: #f0f0f0; /* Cor de fundo */
+    background-color: #f0f0f0;
+    /* Cor de fundo */
     padding: 10px 0;
     position: relative;
 }
 
 .carousel-track {
     display: flex;
-    gap: 50px; /* Espaçamento entre marcas */
-    animation: scroll 60s linear infinite; /* Animação contínua */
-    white-space: nowrap; /* Impede que o texto quebre */
+    gap: 50px;
+    /* Espaçamento entre marcas */
+    animation: scroll 60s linear infinite;
+    /* Animação contínua */
+    white-space: nowrap;
+    /* Impede que o texto quebre */
 }
 
 .brand {
-    display: flex; /* Flexbox para centralizar a imagem */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    height: 150px; /* Mantém a altura consistente */
+    display: flex;
+    /* Flexbox para centralizar a imagem */
+    align-items: center;
+    /* Centraliza verticalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    height: 150px;
+    /* Mantém a altura consistente */
 }
 
 .brand img {
-    max-height: 100%; /* Mantém a altura máxima */
-    max-width: 100%; /* Mantém a largura máxima */
-    object-fit: contain; /* Ajusta a imagem sem cortar */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-height: 100%;
+    /* Mantém a altura máxima */
+    max-width: 100%;
+    /* Mantém a largura máxima */
+    object-fit: contain;
+    /* Ajusta a imagem sem cortar */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra */
 }
 
 @keyframes scroll {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-100%);
     }
@@ -773,19 +834,25 @@ body {
 /* Responsividade */
 @media screen and (max-width: 1768px) {
     .carousel-track {
-        gap: 20px; /* Espaçamento no mobile */
+        gap: 20px;
+        /* Espaçamento no mobile */
     }
+
     .brand img {
-        max-width: 300px; /* Tamanho médio no mobile */
+        max-width: 300px;
+        /* Tamanho médio no mobile */
     }
 }
 
 @media screen and (max-width: 480px) {
     .carousel-track {
-        gap: 10px; /* Espaçamento para telas menores */
+        gap: 10px;
+        /* Espaçamento para telas menores */
     }
+
     .brand img {
-        max-width: 250px; /* Limita tamanho no mobile */
+        max-width: 250px;
+        /* Limita tamanho no mobile */
     }
 }
 
@@ -824,27 +891,38 @@ section p {
 }
 
 .btn {
-    background-color: #0288d1; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    padding: 10px 25px; /* Espaçamento interno do botão */
+    background-color: #0288d1;
+    /* Cor de fundo do botão */
+    color: white;
+    /* Cor do texto */
+    padding: 10px 25px;
+    /* Espaçamento interno do botão */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px; /* Tamanho da fonte */
-    font-weight: bold; /* Negrito */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeitos de transição */
+    font-size: 18px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Negrito */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Efeitos de transição */
     margin-bottom: 10px;
 }
 
 .btn:hover {
-    background-color: #00324f; /* Cor ao passar o mouse */
-    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+    background-color: #00324f;
+    /* Cor ao passar o mouse */
+    transform: scale(1.05);
+    /* Aumenta levemente o botão ao passar o mouse */
 }
 
 .btn:active {
-    background-color: #00324f; /* Cor ao clicar */
-    transform: scale(0.98); /* Diminui levemente o botão ao clicar */
+    background-color: #00324f;
+    /* Cor ao clicar */
+    transform: scale(0.98);
+    /* Diminui levemente o botão ao clicar */
 }
 
 /* Estilo do título */
@@ -867,72 +945,104 @@ section p {
 
 /* Estilização da seção de serviços de consultoria */
 .section {
-    background-color: #f9fafb; /* Cor de fundo suave */
-    padding: 60px 0; /* Espaçamento superior e inferior */
+    background-color: #f9fafb;
+    /* Cor de fundo suave */
+    padding: 60px 0;
+    /* Espaçamento superior e inferior */
 }
 
 .container {
-    max-width: 1200px; /* Largura máxima do container */
-    margin: 0 auto; /* Centraliza o container */
-    padding: 0 20px; /* Espaçamento lateral */
-    text-align: center; /* Centraliza o texto */
+    max-width: 1200px;
+    /* Largura máxima do container */
+    margin: 0 auto;
+    /* Centraliza o container */
+    padding: 0 20px;
+    /* Espaçamento lateral */
+    text-align: center;
+    /* Centraliza o texto */
 }
 
 h2 {
-    font-size: 2.5em; /* Tamanho da fonte do título */
-    color: #333; /* Cor do título */
-    margin-bottom: 40px; /* Espaçamento abaixo do título */
+    font-size: 2.5em;
+    /* Tamanho da fonte do título */
+    color: #333;
+    /* Cor do título */
+    margin-bottom: 40px;
+    /* Espaçamento abaixo do título */
 }
 
 .grid-container {
-    display: grid; /* Utiliza Grid para layout */
-    grid-template-columns: 1fr; /* Uma coluna (empilhado) */
-    gap: 20px; /* Espaçamento entre os cartões */
+    display: grid;
+    /* Utiliza Grid para layout */
+    grid-template-columns: 1fr;
+    /* Uma coluna (empilhado) */
+    gap: 20px;
+    /* Espaçamento entre os cartões */
 }
 
 .card {
-    padding: 30px; /* Espaçamento interno dos cartões */
-    background: #ffffff; /* Fundo branco para os cartões */
-    border-radius: 12px; /* Cantos arredondados */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para os cartões */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação ao passar o mouse */
-    display: flex; /* Utiliza Flexbox para alinhar o conteúdo dentro do cartão */
-    flex-direction: column; /* Alinha os itens verticalmente */
-    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    padding: 30px;
+    /* Espaçamento interno dos cartões */
+    background: #ffffff;
+    /* Fundo branco para os cartões */
+    border-radius: 12px;
+    /* Cantos arredondados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para os cartões */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animação ao passar o mouse */
+    display: flex;
+    /* Utiliza Flexbox para alinhar o conteúdo dentro do cartão */
+    flex-direction: column;
+    /* Alinha os itens verticalmente */
+    align-items: flex-start;
+    /* Alinha o conteúdo à esquerda */
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Move o cartão levemente para cima ao passar o mouse */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Aumenta a sombra ao passar o mouse */
+    transform: translateY(-5px);
+    /* Move o cartão levemente para cima ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    /* Aumenta a sombra ao passar o mouse */
 }
 
 h3 {
-    font-size: 1.8em; /* Tamanho da fonte dos subtítulos */
-    color: #1976d2; /* Cor dos subtítulos */
-    margin-bottom: 10px; /* Espaçamento abaixo do subtítulo */
+    font-size: 1.8em;
+    /* Tamanho da fonte dos subtítulos */
+    color: #1976d2;
+    /* Cor dos subtítulos */
+    margin-bottom: 10px;
+    /* Espaçamento abaixo do subtítulo */
 }
 
 ul {
-    list-style: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o padding da lista */
-    font-size: 1.1em; /* Tamanho da fonte dos itens da lista */
-    color: #555; /* Cor dos itens da lista */
+    list-style: none;
+    /* Remove os marcadores da lista */
+    padding: 0;
+    /* Remove o padding da lista */
+    font-size: 1.1em;
+    /* Tamanho da fonte dos itens da lista */
+    color: #555;
+    /* Cor dos itens da lista */
 }
 
 li {
-    margin: 10px 0; /* Espaçamento entre os itens da lista */
+    margin: 10px 0;
+    /* Espaçamento entre os itens da lista */
 }
 
 /* Media query para responsividade */
 @media (min-width: 768px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas maiores */
+        grid-template-columns: repeat(2, 1fr);
+        /* Duas colunas em telas maiores */
     }
 }
 
 @media (min-width: 1024px) {
     .grid-container {
-        grid-template-columns: repeat(3, 1fr); /* Três colunas em telas grandes */
+        grid-template-columns: repeat(3, 1fr);
+        /* Três colunas em telas grandes */
     }
 }
 
@@ -943,6 +1053,7 @@ li {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -954,6 +1065,7 @@ li {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -1002,6 +1114,7 @@ li {
         opacity: 0;
         transform: translateY(50px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -1056,12 +1169,15 @@ li {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Alinha os itens verticalmente */
-    gap: 15px; /* Espaçamento entre os itens */
+    flex-direction: column;
+    /* Alinha os itens verticalmente */
+    gap: 15px;
+    /* Espaçamento entre os itens */
 }
 
 .topico-item {
-    width: 100%; /* Ocupa toda a largura disponível */
+    width: 100%;
+    /* Ocupa toda a largura disponível */
     font-size: 1rem;
     background-color: #0066cc;
     color: #333;
@@ -1086,10 +1202,21 @@ li {
 }
 
 /* Delay para cada item */
-.topico-item:nth-child(1) { animation-delay: 0.2s; }
-.topico-item:nth-child(2) { animation-delay: 0.4s; }
-.topico-item:nth-child(3) { animation-delay: 0.6s; }
-.topico-item:nth-child(4) { animation-delay: 0.8s; }
+.topico-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.topico-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.topico-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.topico-item:nth-child(4) {
+    animation-delay: 0.8s;
+}
 
 /* Animação */
 @keyframes slideIn {
@@ -1097,6 +1224,7 @@ li {
         opacity: 0;
         transform: translateY(50px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -1192,7 +1320,8 @@ li {
 
     /* Aumentar o tempo antes de esconder o submenu */
     .dropdown-content {
-        transition-delay: 5.5s; /* Submenu vai desaparecer depois de 1.5 segundos ao sair do hover */
+        transition-delay: 5.5s;
+        /* Submenu vai desaparecer depois de 1.5 segundos ao sair do hover */
     }
 }
 
@@ -1252,22 +1381,25 @@ li {
     display: block;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
-    pointer-events: all; /* Permite que os itens do menu recebam eventos */
-    z-index: 999; /* Mantém o menu acima de outros elementos */
-  }
-  
+    pointer-events: all;
+    /* Permite que os itens do menu recebam eventos */
+    z-index: 999;
+    /* Mantém o menu acima de outros elementos */
+}
+
 .dropdown-content {
     position: absolute;
     background-color: #00324f;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     /* Adapta a largura para diferentes tamanhos de tela */
     max-width: 80%;
     border-radius: 5px;
-    list-style-type: none; /* Remove os marcadores */
+    list-style-type: none;
+    /* Remove os marcadores */
 
-  }
+}
 
 .dropdown-content li {
     margin: 0;
@@ -1291,7 +1423,7 @@ li {
     }
 
     .dropdown-content {
-        transition:  opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
         visibility: visible;
         opacity: 1;
     }
@@ -1310,19 +1442,22 @@ li {
 
     /* Aumentar o tempo antes de esconder o submenu */
     .dropdown-content {
-        transition-delay: 2.8s; /* Submenu vai desaparecer depois de 1.5 segundos ao sair do hover */
+        transition-delay: 2.8s;
+        /* Submenu vai desaparecer depois de 1.5 segundos ao sair do hover */
     }
 }
 
 @media screen and (max-width: 768px) {
     .dropdown-content {
-      display: none; /* Initially hide the dropdown content */
+        display: none;
+        /* Initially hide the dropdown content */
     }
-  
+
     .dropdown.active .dropdown-content {
-      display: block; /* Show the dropdown content when the dropdown is active */
+        display: block;
+        /* Show the dropdown content when the dropdown is active */
     }
-  }
+}
 
 /**/
 /* Adicionando uma classe para o menu ativo no mobile */
@@ -1333,7 +1468,8 @@ li {
 
 /* Estilizando o botão do menu hambúrguer */
 .menu-hamburger {
-    display: none; /* Ocultar por padrão */
+    display: none;
+    /* Ocultar por padrão */
     /* ... seus estilos para o botão hambúrguer ... */
 }
 
@@ -1347,7 +1483,235 @@ li {
     }
 
     /* Adicionando um evento para mostrar/ocultar o menu no mobile */
-    .menu-hamburger.active + .nav-links {
+    .menu-hamburger.active+.nav-links {
         display: flex;
     }
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+/* Título principal */
+.main-title {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Layout das seções */
+.section {
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+/* Estilos do texto das seções */
+.text-content {
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.description {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Sessão Soluções Integradas */
+#solucoes .container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#solucoes h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#solucoes p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilo das colunas */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+    width: 23%;
+    text-align: left;
+}
+
+.column h3 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.column li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.column img {
+    width: 24px;
+    height: auto;
+    margin-right: 8px;
+}
+
+/* Sessão Fábrica de Software */
+#fabrica-software .container {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+#fabrica-software h2 {
+    font-size: 24px;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Fases superiores */
+.phases {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.phase {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #003366;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo do PDCA */
+.pdca {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.plan, .do, .check, .action {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.plan { top: 10px; background-color: #4CAF50; }
+.do { right: 10px; background-color: #FF9800; }
+.check { bottom: 10px; background-color: #8BC34A; }
+.action { left: 10px; background-color: #F44336; }
+
+/* Estilos para as etapas */
+.step {
+    width: 150px;
+    background-color: #003366;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Indicadores laterais */
+.indicators {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: -180px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.indicator {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin-bottom: 10px;
 }
